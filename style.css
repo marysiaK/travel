@@ -1,0 +1,385 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.row:after, .row:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container:after, 
+.container:before {
+	content: "";
+  	display: table;
+  	clear: both;
+}
+section>.container {
+	margin:50px auto;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col-offset-0 {margin-left: 0;}
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+
+[class*="col-"] {
+   float:left;
+}
+
+header {
+  	background-color: #313234;
+	position: relative;
+
+}
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+}
+.row {
+    width: 100%;
+}
+header {
+float: none;
+		width: 100%;
+}
+header img {
+	max-height: 50px;
+}
+ 
+header > nav ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style-type: none;
+}
+header > nav ul > li {
+	 display:inline-block;
+	line-height: 50px;
+	padding: 0 10px;
+}
+header > nav ul > li > a {
+  line-height: 50px;
+  display: block;
+  color: #fff;
+  padding: 0 20px;
+  text-decoration: none;
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+}
+header > nav ul > li > a:hover {
+  color: #DAA520;
+}
+
+
+.hero {
+   background-image: url(https://cdn.colorlib.com/activello/wp-content/uploads/sites/10/2015/11/photo-1437915015400-137312b619751.jpg);
+    height: 800px;
+	background-size: cover;
+	position: relative;
+	background-position: center;
+
+}
+.slogan {
+	float: right;
+	position: absolute;
+	top: 40%;
+    right: 0;  
+  	background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    text-transform: uppercase;
+    text-align: center;   
+} 
+.slogan span {
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-style: italic;
+}	
+.icons {
+    text-align: center;
+	 margin: 80px 15%;
+}
+.icons .fa  {
+	padding: 20px;
+    font-size: 60px;
+	min-width: 100px;	
+    border-radius: 15px;
+    color: white;
+    background-color: #313332;
+}
+.hover .hov:hover i{
+	background-color: #00c7e8;
+	transition: ease-out 0.4s;	
+}
+.hover .hov:hover h3 {
+	color:#00c7e8;
+}
+.container2 {
+	max-width: 900px;
+	margin: 20px auto;
+	text-align: center;
+}
+.col-3ex5 {
+    width: 20%;
+}
+.col-3ex4 {
+    width: 40%;
+}
+.gallery [class*="col-"] {
+	padding: 0;
+	position: relative;	
+}
+.gallery [class*="col-"]:hover .layer {
+	display: block;
+}
+.gallery [class*="col-"]:hover img {
+	background: rgba(0,0,0, 0.5);
+}
+.gallery img {
+	width: 100%;
+	height: 160px;
+	float: left;
+}
+.layer {
+	background: rgba(0,0,0, 0.5);
+	height: 100%;
+	width: 100%;
+	display: none;
+	position: absolute;
+	color: white;
+	margin: 0 auto;
+}
+.layer i {
+	position: relative;
+	cursor: pointer;
+	text-align: center;
+	top:50%;
+	left: 50%;
+}
+.work {
+  text-align: center;
+}
+
+.work > div:hover .worker {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.work > div:hover .worker p {
+  display: block;
+}
+.worker {	
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0);
+  transition: 0.5s background;
+}
+.worker p {
+  color: #fff;
+  margin: 20px 0 0 0;
+  display: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align:center;
+}
+
+.work > div {
+  width: 200px;
+  height: 200px;
+  line-height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.workers img {
+  max-width: 100%;
+  height: auto;
+}
+.workers {
+	 text-align: center;
+	 margin: 80px 15%;
+}
+.promo {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiL-A1YmAhEp-IQiUbTPV5KFuN7YlLTmkl4uZb9GcFUqcuOyEY);
+    color: white;
+    position: relative;
+}
+.promo h1 {
+	text-align: center;
+	text-transform: uppercase;
+    font-style: italic;
+    position: absolute;
+	margin: 0 auto;
+	
+}
+.promo p {
+	width: 50%;
+	float: left;	
+	padding: 50px 0 100px 50px;
+}
+
+.promo img {
+	width: 100%;
+	border-radius: 30px;
+	position: relative;
+}
+.numbers {
+	text-align: center;
+		 margin: 80px 15%;
+}
+.numbers h2{
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+.numbers p {
+	color:#00c7e8;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+	font-family: "Gloria Hallelujah";
+}
+.contact {
+	background:	#696969;
+	color: white;
+}
+.contact h1, h4 {
+	padding:20px;
+	text-transform: uppercase;
+	float: left;
+}
+
+.contact .line{
+	float: left;
+    margin: 50px 0 0 20px;
+    width: 30%;
+    height: 5px;
+    background-color: white;
+}
+
+.contact p{
+	padding:20px;
+	content: "";
+  	display: table;
+  	clear: both;
+}
+.stopka{
+	background: #313332;
+}
+.stopka p {
+	color: white;
+	padding: 10px ;
+    text-align: center;
+    margin: 0 auto;
+}
+.social {
+		padding: 20px;
+}
+.social i {
+	font-size: 1.2em;
+	background-color: #03cbec;
+	width: 40px ;
+	height: 40px;
+	margin-right: 3px;
+	text-align: center;
+	line-height: 40px;
+
+}
+@media (max-width: 767px){
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+ header> nav  ul {
+ 	float: none;
+	width: 100%;   
+ }
+header>nav  ul > li {
+	width: 100%;
+   	display: block;
+   	text-align: center;	
+ }
+header img {
+	margin: 0 auto;
+	max-width: 100%;
+	float: none;
+	display: block;
+}
+.gallery img {
+	margin: 0 auto;
+	max-width:100%;
+}
+.hero {
+ 	width:100%;
+ }
+ .workers {
+ 	margin: 80px 30%;
+ }
+ .promo h1 {
+ 	padding: 0 auto;
+ }  
+footer {
+ 	text-align: center;
+ }
+footer>.col-s-12>.row>.col-s-4 {
+ 	float: none;
+    text-align: center;
+}
+.contact h1, h4 {
+	float: none;
+	text-align: center;
+ }	
+.contact .line{
+ 	float: none;
+  	width:75%;
+	display: block;
+	margin: 0 auto;
+	}
+ }
+
+
+
+
+
+
